@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  background-color: black; }
+
+.wrapper {
+  display: flex;
+  margin: 50px auto;
+  padding: 5px;
+  width: calc(( (10px + 2px * 2) * 3) * 3 + 15px);
+  border: 4px white solid;
+  border-radius: 10px;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+  .wrapper .flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 5px 0;
+    border-radius: 10px; }
+    .wrapper .flex-row .cube {
+      width: calc((10px + 2px * 2) * 3);
+      height: calc((10px + 2px * 2) * 3);
+      display: flex;
+      flex-flow: nowrap column;
+      background-color: white;
+      border-radius: 5px; }
+      .wrapper .flex-row .cube .cube-row {
+        display: flex;
+        flex-flow: nowrap row;
+        align-items: center;
+        height: 10px;
+        margin: 2px 0; }
+        .wrapper .flex-row .cube .cube-row .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          margin: 3px;
+          background-color: black; }
+      .wrapper .flex-row .cube .cube-row-center {
+        justify-content: center; }
+      .wrapper .flex-row .cube .cube-row-start {
+        justify-content: flex-start; }
+      .wrapper .flex-row .cube .cube-row-end {
+        justify-content: flex-end; }
+      .wrapper .flex-row .cube .cube-row-around {
+        justify-content: space-around; }
+      .wrapper .flex-row .cube .cube-row-between {
+        justify-content: space-between; }
+  .wrapper .flex-row-center {
+    justify-content: center; }
+  .wrapper .flex-row-between {
+    justify-content: space-between; }
+
+/*# sourceMappingURL=style.css.map */
